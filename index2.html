@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        var result = [];
+        var sum = function(nums, target){
+            for (let i=0; i<=nums.length; i++){
+                for (let j=0; j<=nums.length; j++){
+                    if(nums[i] + nums[j] == target){
+                        result.push(nums[i]);
+                        result.push(nums[j]);
+                        return result
+                    }
+
+                }
+            }
+        }   
+        console.log(sum([1, 2, 3], 4));
+
+    </script>
+</head>
+<body>
+    <p>Hi</p>
+</body>
+</html>
+<!-- Implement a JS function that takes a list of integers and a target number as input, and returns a array of two integers that add up to the target number. -->
